@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+    height: 100vh;
+    width: 100vw;
+
+    background-color: hsl(216, 12%, 8%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Overpass', sans-serif;
+}
+
+.card{
+    width: 400px;
+    height: 400px;
+    border-radius: 10%;
+    padding: 35px;
+    background: radial-gradient(at top, hsl(213, 19%, 18%), hsl(215deg, 27%, 12%));
+}
+
+.card_body{
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.card_icon{
+    background-color: hsl(210, 19%, 18%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.card_icon--star{
+    height: 14px;
+    width: 14px;
+}
+
+.card_title{
+    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+    padding-bottom: 9px;
+}
+
+.card_text{
+    color: hsl(217, 12%, 63%);
+    font-size: 14px;
+    line-height: 1.3rem;
+}
+
+.card button{
+ -webkit-appearance: none;
+ -moz-appearance: none;
+ appearance: none;
+
+ border: none;
+ outline: none;
+ font-family: 'Overpass', sans-serif;
+}
+
+.card button:hover{
+    cursor: pointer;
+}
+
+.card_buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.card_button--digit{
+    background-color: hsl(210, 19%, 18%);
+    color: hsl(217, 12%, 63%);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.card_button--digit:hover{
+    background-color: hsl(217, 12%, 63%);
+    color: hsl(0, 0%, 100%);
+}
+
+.card_submit{
+    height: 40px;
+    border-radius: 2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-family: 'Overpass', sans-serif;
+    text-transform: uppercase;
+    color: white;
+    background-color: hsl(25, 97%, 53%);
+}
+
+.card_submit:hover{
+    color: hsl(25, 97%, 53%);
+    background-color: white;
+}
+
+.card_submited{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.rating{
+    background-color: hsl(210, 19%, 18%);
+    color: hsl(25, 97%, 53%);
+    font-size: 13px;
+    padding: 0rem 1rem;
+    height: 32px;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+
+}
+
+.hidden{
+    display: none;
+}
+
+.selected{
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+}
+
+.centered{
+    text-align: center;
+}
+
+@media screen and (min-width: 375px){
+    .card {
+        width: 410px;
+        height: 415px;
+        padding: 34px;
+        gap: 2rem;
+        justify-content: none;
+      }
+      .card__icon {
+        height: 44px;
+        width: 44px;
+      }
+      .card__info {
+        display: grid;
+        gap: 0.5rem;
+      }
+      .card__text {
+        font-size: 15px;
+      }
+      .card__buttons--digit {
+        height: 44px;
+        width: 44px;
+      }
+}
